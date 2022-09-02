@@ -41,7 +41,18 @@ let increasePeople=()=>{
 numberPeople +=1
 
 // plus ka sign kam kra rha ha 
-numberOfPeopleDiv.innerHTML=numberPeople
+numberOfPeopleDiv.innerHTML=numberPeople;
 
+// nummber of people ki base par calculate kr 
+calculateBill()
+}
 
+let decreasePeople=()=>{
+if(numberPeople<=1){
+    return
+}
+
+    numberPeople -=1;
+    numberOfPeopleDiv.innerHTML=numberPeople;
+    calculateBill()
 }
