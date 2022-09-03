@@ -51,7 +51,6 @@ let decreasePeople=()=>{
 if(numberPeople<=1){
     return
 }
-
     numberPeople -=1;
     numberOfPeopleDiv.innerHTML=numberPeople;
     calculateBill()
